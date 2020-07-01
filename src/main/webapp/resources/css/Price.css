@@ -1,0 +1,175 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 24, 2020, 10:08:32 AM
+    Author     : michael
+*/
+
+body{
+    background-color:white;
+    background-size: 100%;
+    margin: 0;
+    font-size: 14px;
+    font-family: Verdana, "Verdana CE",  Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+    background-image: url(/pricein/resources/images/coco.jpg);
+    background-repeat: no-repeat;
+}
+input {
+   -moz-border-radius:6px;
+   -webkit-border-radius:6px;
+   border-radius:6px;
+   font-size:14px;
+   width:250px;
+   min-height:30px;
+   
+}
+.in2{
+   width:100px;
+   min-height:30px;
+} #logo{
+    height: 25px;
+    width: 100px;
+    margin: 5px
+}
+#img11, #img2{
+    height: 150px;
+    width: 200px;
+}
+#logo22, #logo23{
+    height: 25px;
+    width: 100px;
+    margin: 5px
+}
+#logo23{
+    position: relative;
+    left:-2px;
+}
+.nav-links{
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+    display: block;
+     margin-left: 40px;
+        color: black;
+}
+  #nav{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height :50px;
+        align-items: center;
+        background-color:#ccccff;
+        
+       
+    }
+    .main-nav{
+         display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style-type: none;
+    
+    }
+    
+    #search{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0;
+        height :500px;
+        
+       
+        
+    } 
+    #sea{
+        
+    }
+   /* #queryresult{
+        display:grid;
+        height: 100vh;
+        grid-template-columns:1fr;
+        grid-template-rows: 0.3fr 0.5fr 1.2fr 1.2fr;
+        grid-template-areas:
+            "searchbar"
+            "imagebar"
+            "localbar"
+            "juma";
+        grid-gap:0.2em;
+            
+    }*/
+    #searchbar{
+        background-color:white;
+        grid-area:searchbar;
+        border-radius: 10px;
+        margin: 2px;
+        position: fixed;
+        width: 100%;
+    }
+     #seal{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0;
+        
+        
+       
+        
+    } 
+    #imagebar{
+        background-color:white;
+        grid-area:imagebar;
+        border-radius: 10px;
+         margin: 2px;
+         
+    }
+    #imgi{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0;
+        
+        
+       
+        
+    } 
+    #localbar{
+        background-color: white;
+        grid-area:localbar;
+        border-radius: 10px;
+         margin: 2px;
+    }
+    #locall{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0;
+        
+        
+    }
+    #juma{
+        background-color:white;
+        grid-area:juma;
+        border-radius: 10px;
+         margin: 2px;
+    }
+    #jum{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0;
+        
+        
+    }
+    #foott{
+        display: flex;
+        height: 75px;
+        background-color:#ccccff;
+    }
+    #foottt{
+        display: flex;
+        height:75px;
+       background-color:#ccccff;
+    }
+   @media screen and (max-width:767px) {
+       .main-nav{
+           display: none;
+       }
+   
+   }

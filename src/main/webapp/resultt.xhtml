@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      >
+    <h:head>
+        <h:outputScript library="js" name="price.js"/>
+        <h:outputStylesheet library="css" name="Price.css"></h:outputStylesheet>
+        <title>Query Result</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <h:body>
+         <div id="nav">
+             <a href="faces/main.xhtml"><h:graphicImage url="/resources/images/PriceCheck3.png" id="logo22"/></a>
+             
+               <ul class="main-nav" id="js-menu">
+                    
+                     <li><a href="faces/main.xhtml" class="nav-links">Home</a></li>
+                     
+                     <li><a href="client.xhtml" class="nav-links"> About </a></li>
+                      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                          <i class="fa fa-bars"></i> 
+                     </a>
+                    
+                     
+                 </ul>
+             
+            
+        </div>
+        <div id="navbarr"></div>
+        <div id="queryresult">
+            <div id="searchbar">
+                <div id="seal">
+                <h:form>
+                    <h:inputText value="#{price.check}" autocomplete="on"/>
+                    <!--input type="text" value=""/-->
+                     <h:commandButton style="width: 100px; position: relative; left:-3px; min-height: 35px; background-color: pink;" value="Check" action="#{price.queresult}">
+                      <f:param name="search" value="#{price.check}"/>
+                     </h:commandButton>
+                    
+                </h:form>
+                </div>
+            </div>
+            <div id="imagebar">
+                <div id="imgi"> <h:graphicImage url="#{price.picture}" id="img11"/> <h:graphicImage url="#{price.picture}" id="img2"/> </div> </div>
+            <div id="localbar"> 
+                <div id="locall">
+                
+                <h:outputText escape="false" value="#{price.jumia}" id="muy"/><br/>
+                </div>
+                </div>
+            <div id="juma">
+                <div id="jum">
+                   
+                <h:outputText escape="false" value="#{price.clients}" id="muy2"/><br/>
+                </div>
+            </div>
+           
+        </div>
+        <div id="foottt"></div>
+    </h:body>
+</html>
